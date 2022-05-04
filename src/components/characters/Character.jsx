@@ -4,9 +4,9 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 
 export default function Character({name, gender, favoured = false, img}) {
   const [isFavoured, setIsFavoured] = useState(favoured)
-  
+
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345 }} data-testid="character-card">
       <CardMedia
         component="img"
         height="240"
@@ -14,7 +14,6 @@ export default function Character({name, gender, favoured = false, img}) {
       />
       <CardContent sx={{ textAlign: 'center' }}>
         <h2>{name}</h2>
-        <h2>{isFavoured}</h2>
         <h3>{gender}</h3>
     
         <ToggleButton

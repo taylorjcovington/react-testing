@@ -5,6 +5,8 @@ export const GET_CHARACTERS = gql`
     allPeople {
       people {
         name
+        gender
+        birthYear
       }
     }
   }

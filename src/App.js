@@ -1,4 +1,4 @@
-import Characters from './components/characters/Characters';
+import Characters from './components/characters';
 import SignupForm from './components/SignupForm';
 
 function App() {
